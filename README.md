@@ -1,2 +1,2 @@
-# Disgotchi-for-hacklahoma
-Funky tamagotchi discord bot (wow!)
+# Disgotchi-for-hacklahoma 
+Funky tamagotchi discord bot (wow 😆!)
