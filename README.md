@@ -2,7 +2,7 @@
 Funky tamagotchi discord bot (wow 😆!)  
 
 ## Gameplay for disgotchi  
-* Hatching Stage
+* :egg: Hatching Stage:  
 Each day in the real world is approx. one year in the tamagotchi "world"  
 Whenever the bot appears into the server we want it to send a message that states something like.  
 > "An egg appeared in the server"  
