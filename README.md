@@ -16,7 +16,7 @@ This stage can be sort of a setup stage for the Disgotchi.
 We can add something to where each day or few days the disgotchi "grows" into a different form of itself like from toddler, to adolescense, to teen, to adult and so on  
 The different stages would allow for more interaction with the pet and dialogue (nate can write the script for each dialogue/personality thing)  
 Make it to where it would passively say messages every now and then if the user wants it to    
-* Adult Stage:  
+* :rooster: Adult Stage:  
   
 * Notes: 
 Personality types would change the "behavior" when interacting with the users, different ways to play with the pet and different dialogue options  
