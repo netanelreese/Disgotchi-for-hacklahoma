@@ -1,4 +1,4 @@
-# Disgotchi-for-hacklahoma [![Ditto](https://img.pokemondb.net/sprites/bank/normal/ditto.png)](http://pokemondb.net/pokedex/ditto)   
+# Disgotchi-for-hacklahoma [![Ditto](https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/ditto.png)](http://pokemondb.net/pokedex/ditto)   
 Funky tamagotchi discord bot (wow 😆!)  
 
 ## Gameplay for disgotchi  
