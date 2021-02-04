@@ -34,9 +34,12 @@ Features to interact with disgotchi:
 * :rooster: Adult Stage:  
   
 *  :1st_place_medal: Additional Features (As time allows):    
-Leaderboards within the server to show who takes care of the Disgotchi the most    
+1. Leaderboards within the server to show who takes care of the Disgotchi the most    
 Achievements whenever the server/user reaches a certain benchmark (i.e. the server feeding the pet 1000 times or a single user feeding the pet 100 times)  
 Achievements will add a certain XP to the bond value of the pet to make it "act closer" to the servers users
+
+2. Let the people on a server message anything to the bot, just like how we talk to our pet. Depending on the sentiment of what someone said, the bot responds with either a happy or a sad animal gif. Simple sentiment analysis, Giphy endpoint
+
     
 * Notes: 
 Personality types would change the "behavior" when interacting with the users, different ways to play with the pet and different dialogue options -Nate  
