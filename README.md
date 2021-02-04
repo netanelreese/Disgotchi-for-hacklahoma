@@ -17,7 +17,19 @@ This stage can be sort of a setup stage for the Disgotchi.
 * :hatched_chick: Growing Stage:   
 We can add something to where each day or few days the disgotchi "grows" into a different form of itself like from toddler, to adolescense, to teen, to adult and so on  
 The different stages would allow for more interaction with the pet and dialogue (nate can write the script for each dialogue/personality thing)  
-Make it to where it would passively say messages every now and then if the user wants it to 
+Make it to where it would passively say messages every now and then if the user wants it to  
+  
+*This applies to both growing and adult stage*    
+Features to interact with disgotchi:   
+* feed/give water to disgotchi    
+* play/exercise  
+* scold/praise  
+* sleep (turn off/on light)  
+* clean up poop (in the actual game lol)  
+* heal disgotchi if sick (makes it unhappy if you dont)  
+* display age, weight(?), discipline, hunger, happiness  
+* speak to disgotchi (disgotchi recognizes the words from users to it and responds with emotes)  
+
 -Nate     
 * :rooster: Adult Stage:  
   
