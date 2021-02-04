@@ -21,5 +21,10 @@ Make it to where it would passively say messages every now and then if the user 
 -Nate     
 * :rooster: Adult Stage:  
   
+*  :1st_place_medal: Additional Features (As time allows):    
+Leaderboards within the server to show who takes care of the Disgotchi the most    
+Achievements whenever the server/user reaches a certain benchmark (i.e. the server feeding the pet 1000 times or a single user feeding the pet 100 times)  
+Achievements will add a certain XP to the bond value of the pet to make it "act closer" to the servers users
+    
 * Notes: 
 Personality types would change the "behavior" when interacting with the users, different ways to play with the pet and different dialogue options -Nate  
