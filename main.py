@@ -5,6 +5,10 @@ import threading
 import requests
 import json
 
+happiness = 0
+hunger = 0;
+discipline = 0;
+
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -22,16 +26,43 @@ class MyClient(discord.Client):
             for word in word_list:
                 if word in messageContent:
                     await message.channel.send('Do not say that!')
+        global happiness
+        global hunger
+        global discipline
+
+        if message.author == client.user:
+            return
+        if message.content.startswith('Hello'):
+            await message.channel.send('Hello!')
+
+        if message.content.startswith('are you hungry') or message.content.startswith('how hungry are you'):
+            if (hunger > 100):
+                await message.channel.send("I'm starving (＠◇＠)")
+            elif (hunger > 80):
+                await message.channel.send("I'm hungry | •́ ◇ •̀ |")
+            elif (hunger > 60):
+                await message.channel.send("You may feed me if you want to! ⸜₍๑•⌔•๑ ₎⸝")
+            elif (hunger > 40):
+                await message.channel.send("I am okay, thank you! ꜀( ˊ̠˂˃ˋ̠ )꜆")
+            elif (hunger > 20):
+                await message.channel.send("I am so full ＜(´ ՞)ਊ( ՞ )＞")
+            elif (hunger > 0):
+                await message.channel.send("I can starve for the rest of my life ＜(´ ՞)ਊ( ՞ )＞")
+            else:  # why is this invalid syntax???
+                await message.channel.send("I'm about to die from overeating..")
+        # indicate points
+        if message.content.startswith('/points'):
+            await message.channel.send("My hungriness is: " + str(hunger) + "\n")
+            await message.channel.send("My happiness is: " + str(happiness) + "\n")
+            await message.channel.send("My discipline is: " + str(discipline) + "\n")
 
 
 client = MyClient()
 
-# client.run(os.getenv ('TOKEN') )
+client.run(os.getenv('TOKEN'))
+
 
 # variables for disgotchi things, halfway implemented, hunger and happiness decays now - Nate
-happiness = 0
-hunger = 0;
-discipline = 0;
 
 
 ######## Plot ##########
@@ -98,37 +129,8 @@ client.run(os.getenv('TOKEN'))
 
 @client.event
 async def on_message(message):
-    message.content = message.content.lower()
-    global happiness
-    global hunger
-    global discipline
+    # message.content=message.content.lower()
+    message.content
 
-    if message.author == client.user:
-        return
-    if message.content.startswith('Hello'):
-        await message.channel.send('Hello!')
-
-    if message.content.startswith('are you hungry') or message.content.startswith('how hungry are you'):
-        if (hunger > 100):
-            await message.channel.send("I'm starving (＠◇＠)")
-        elif (hunger > 80):
-            await message.channel.send("I'm hungry | •́ ◇ •̀ |")
-        elif (hunger > 60):
-            await message.channel.send("You may feed me if you want to! ⸜₍๑•⌔•๑ ₎⸝")
-        elif (hunger > 40):
-            await message.channel.send("I am okay, thank you! ꜀( ˊ̠˂˃ˋ̠ )꜆")
-        elif (hunger > 20):
-            await message.channel.send("I am so full ＜(´ ՞)ਊ( ՞ )＞")
-        elif (hunger > 0):
-            await message.channel.send("I can starve for the rest of my life ＜(´ ՞)ਊ( ՞ )＞")
-        else:  # why is this invalid syntax???
-            await message.channel.send("I'm about to die from overeating..")
-    # indicate points
-    if message.content.startswith('/points'):
-        await message.channel.send("My hungriness is: " + str(hunger) + "\n")
-        await message.channel.send("My happiness is: " + str(happiness) + "\n")
-        await message.channel.send("My discipline is: " + str(discipline) + "\n")
-
-
-client.run(os.getenv('TOKEN'))
+# client.run(os.getenv ('TOKEN'))
 
