@@ -6,9 +6,9 @@ class Hunger:
         self.decay_hunger()
 
     def decay_hunger(self):
-        threading.Timer(1.0,self.decay_hunger).start()
+        threading.Timer(5.0,self.decay_hunger).start()
         if self.hunger>10 :
-            self.hunger*=0.96
+            self.hunger*=0.99
 
     def add_hunger(self, increment):
         self.hunger+=increment

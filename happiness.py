@@ -1,4 +1,5 @@
 import threading
+import random
 
 class Happiness:
 
@@ -12,7 +13,7 @@ class Happiness:
     def decay_happiness(self):
         threading.Timer(5.0,self.decay_happiness).start()
         if self.happiness>10 :
-            self.happiness*=0.96
+            self.happiness*=0.99
 
     def add_happiness(self, increase):
         self.happiness+=increase
@@ -32,3 +33,11 @@ class Happiness:
             return "I'm super happy! (•ө•)♡ ♥♥♥♥♡"
         else:
             return "I love you!! ♫.(◕∠◕).♫ ♥♥♥♥♥"
+
+    def throw_tantrum(self):
+        return 'Grrrr! o(｀Θ´)○' # We can implement a random thrower here
+
+    def rand_mood(self):
+        mood=random.randint(0,4)
+        mood_list=['Grumpy (｀Θ´)','Down... ( ˘⊖˘)','Happy!! (•͈⌔•͈⑅)','Excited!!! ヽ(○･▽･○)ﾉﾞ']
+        return mood_list[mood]
